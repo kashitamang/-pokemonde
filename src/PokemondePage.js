@@ -12,7 +12,7 @@ export default function App() {
 //set state 
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 14;
+  const perPage = 24;
 
   //useEffect
   useEffect(() => {
