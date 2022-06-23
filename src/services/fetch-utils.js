@@ -5,7 +5,7 @@ export async function getPokemons(from = 0, to = 30) {
     .from('pokemons')
     .select()
     .range(from, to);
-
+  console.log(response);
   return checkError(response);
 }
 
