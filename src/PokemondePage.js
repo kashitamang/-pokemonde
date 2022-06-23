@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { getPokemons } from './services/fetch-utils.js';
 import pokeball from './pokeball.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 //import pokemons list 
 import PokemonsList from './PokemonsList.js';

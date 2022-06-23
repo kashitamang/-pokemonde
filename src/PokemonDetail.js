@@ -36,7 +36,6 @@ export default function PokemonDetail() {
           <p>spawn chance: {pokemon.spawn_chance}</p>
           <p>average spawn: {pokemon.avg_spawns}</p>
           <p>spawn time: {pokemon.spawn_time}</p>
-
         </div>
       </div>
     </>
