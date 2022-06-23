@@ -1,6 +1,10 @@
 
+h2{
+    font-size: 2rem;
+}
+
 .pokemon {
-    height: 20vmin;
+    height: 30vmin;
     margin-top: 20px;
     pointer-events: none;
     animation: pokemon-spin infinite 2s linear;

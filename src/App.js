@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './pokemondelogo.jpg';
 
 import {
   BrowserRouter as Router,
@@ -14,6 +15,9 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
+        <header>
+          <img src={logo} className="logo"/>
+        </header>
         <Switch>
           <Route exact path="/">
             {/* this pokemonde page route should list all the pokemons */}

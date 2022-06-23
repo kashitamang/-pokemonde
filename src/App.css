@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(197, 235, 200);
+  background-color: rgb(251, 191, 132);
   min-width: 500px;
   width: 67vw;
   display: flex;
@@ -9,10 +9,12 @@
   margin-top:150px;
   border-radius: 10px;
   padding: 10px;
+  background-image: url(./background.jpg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 body {
-  background-image: url(./background.jpg);
+  background-image: url(./pikachu_pattern.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +27,7 @@ body h1 {
 .pokemons-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -35,6 +38,7 @@ body h1 {
   margin: 20px;
   border-radius: 10px;
   opacity: 60%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .pokemon-item:hover {
@@ -42,14 +46,12 @@ body h1 {
 }
 
 header {
-  background-color: #282c34;
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 button {
@@ -81,13 +83,8 @@ button:hover{
 @keyframes App-pokeball-spin {
   from {
     transform: rotate(0deg);
-    opacity: 1;
-  }
-  50% {
-    opacity: 50%;
   }
   to {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }

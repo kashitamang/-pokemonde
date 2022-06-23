@@ -30,6 +30,13 @@ export default function PokemonDetail() {
           <p>type 2: {pokemon.type_2}</p>
           <p>height: {pokemon.height}</p>
           <p>weight: {pokemon.weight}</p>
+          <p>candy: {pokemon.candy}</p>
+          <p>candy count: {pokemon.candy_count}</p>
+          <p>egg: {pokemon.egg}</p>
+          <p>spawn chance: {pokemon.spawn_chance}</p>
+          <p>average spawn: {pokemon.avg_spawns}</p>
+          <p>spawn time: {pokemon.spawn_time}</p>
+
         </div>
       </div>
     </>
