@@ -2,7 +2,7 @@ import { client, checkError } from './client.js';
 
 export async function getPokemons(from = 0, to = 30) {
   const response = await client 
-    .from('pokemons')
+    .from('pokedex')
     .select()
     .range(from, to);
   // console.log(response);
@@ -11,7 +11,7 @@ export async function getPokemons(from = 0, to = 30) {
 
 export async function getPokemonById(id) {
   const response = await client 
-    .from('pokemons')
+    .from('pokedex')
     .select()
     .match({ id })
     .single();
