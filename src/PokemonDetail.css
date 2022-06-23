@@ -1,0 +1,20 @@
+
+.pokemon {
+    height: 20vmin;
+    margin-top: 20px;
+    pointer-events: none;
+    animation: pokemon-spin infinite 2s linear;
+    position: relative;
+  }
+  
+  @keyframes pokemon-spin {
+    from {
+      opacity: 1;
+    }
+    50% {
+      opacity: 60%;
+    }
+    to {
+      opacity: 1;
+    }
+  }

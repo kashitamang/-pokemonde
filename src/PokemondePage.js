@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { getPokemons } from './services/fetch-utils.js';
+import logo from './pokemondelogo.jpg';
+import pokeball from './pokeball.png';
 
 //import pokemons list 
 import PokemonsList from './PokemonsList.js';
+
 
 export default function App() {
 //set state 
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 20;
+  const perPage = 14;
 
   //useEffect
   useEffect(() => {
@@ -27,8 +30,9 @@ export default function App() {
   //module 
   return (
     <>
-      <h1>Pokemonde</h1>
-      <h4>current page {page}</h4>
+      <img className='App-pokeball' src={pokeball}/>
+      <img src={logo} className="logo"/>
+      <h4>page {page}</h4>
       <div className="header-buttons">
         <button disabled={page <= 0} onClick={() => setPage(page - 1)}>⬅️</button>
         <button onClick={() => setPage(page + 1)}>➡️</button>
